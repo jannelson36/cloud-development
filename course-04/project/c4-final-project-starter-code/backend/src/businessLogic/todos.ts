@@ -2,11 +2,11 @@ import { TodoItem } from '../models/TodoItem'
 import { CreateTodoRequest } from '../requests/CreateTodoRequest'
 import { createLogger } from '../utils/logger'
 import * as uuid from 'uuid'
-import { createTodoItem, deleteTodoItem, getTodoItemsByUser, updateAttachmentInTodoItem, updateTodoItem } from './todosAcess'
+import { createTodoItem, deleteTodoItem, getTodoItemsByUser, updateAttachmentInTodoItem, updateTodoItem } from '../dataLayer/todosAcess'
 import CreateError from '../utils/http-error'
 import { UpdateTodoRequest } from '../requests/UpdateTodoRequest'
 import { TodoUpdate } from '../models/TodoUpdate'
-import { getAttachmentUrl, getUploadUrl } from './attachmentUtils'
+import { getAttachmentUrl, getUploadUrl } from '../dataLayer/attachmentUtils'
 
 
 // TODO: Implement businessLogic

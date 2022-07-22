@@ -7,7 +7,7 @@ import { cors, httpErrorHandler } from 'middy/middlewares'
 
 import { createsuccess, failure, getUserId } from '../utils'
 import { createLogger } from '../../utils/logger'
-import { generateSignedUrl, updateAttachmentUrl } from '../../helpers/todos'
+import { generateSignedUrl, updateAttachmentUrl } from '../../businessLogic/todos'
 
 const logger = createLogger('generateUploadUrl')
 

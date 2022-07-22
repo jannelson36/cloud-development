@@ -6,7 +6,7 @@ import { cors, httpErrorHandler } from 'middy/middlewares'
 
 import { deletesuccess, failure, getUserId } from '../utils'
 import { createLogger } from '../../utils/logger'
-import { deleteTodo } from '../../helpers/todos'
+import { deleteTodo } from '../../businessLogic/todos'
 
 const logger = createLogger('deleteTodo')
 
